@@ -8,6 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class XRExclusiveSocketInteractor : XRSocketInteractor
 {
     public string AcceptedType;
+    public bool isAttachedByOnlyGrab;
 
     public override bool CanSelect(XRBaseInteractable interactable)
     {
@@ -15,8 +16,7 @@ public class XRExclusiveSocketInteractor : XRSocketInteractor
 
         if (socketTarget == null)
             return false;
-
-        return base.CanSelect(interactable) && (socketTarget.SocketType == AcceptedType);
+        return base.CanSelect(interactable) && (socketTarget.SocketType == AcceptedType) && ((isAttachedByOnlyGrab) ? (interactable as XRGrabableObject).CanSocketed() : true);
     }
 
     public override bool CanHover(XRBaseInteractable interactable)
