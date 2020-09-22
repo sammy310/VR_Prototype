@@ -18,8 +18,12 @@ public class XRExclusiveSocketObjectInteractor : XRSocketInteractor
 
         if (socketTarget == null)
             return false;
-        
-        return base.CanSelect(interactable) && (socketTarget.SocketType == AcceptedType) && ((isAttachedByOnlyGrab) ? (interactable as XRGrabableObject).CanSocketed() : true);
+
+        XRGrabbableObject grabInteractable = (interactable as XRGrabbableObject);
+        if (grabInteractable == null)
+            return false;
+
+        return base.CanSelect(interactable) && (socketTarget.SocketType == AcceptedType) && ((isAttachedByOnlyGrab) ? grabInteractable.CanSocketed() : true);
     }
 
     public override bool CanHover(XRBaseInteractable interactable)
