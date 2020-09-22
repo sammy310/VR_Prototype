@@ -125,8 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Axis: {x: 0, y: -1, z: 0}
-  MaxDistance: 0
-  ReturnSpeed: 10
+  MaxDistance: 0.04
+  ReturnSpeed: 1
   ButtonPressAudioClip: {fileID: 0}
   ButtonReleaseAudioClip: {fileID: 0}
   OnButtonPressed:

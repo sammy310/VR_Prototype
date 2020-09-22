@@ -37,6 +37,11 @@ public class CoinInsert : XRBaseInteractor
         Coin.transform.localPosition = transform.position + RemovePosition;
         CoinCount++;
 
+        if (OnCoinInsert.GetPersistentEventCount() > 0)
+        {
+            UseCoin();
+        }
+
         StartCoroutine(CoinInsertDelayed());
     }
 
