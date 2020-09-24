@@ -133,8 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8334712176293851321}
   - component: {fileID: 3859916446490591359}
-  - component: {fileID: 2377185723757957356}
-  - component: {fileID: 134876622288355805}
+  - component: {fileID: 6740186437763828259}
+  - component: {fileID: 8189596284132819176}
   m_Layer: 0
   m_Name: Gun Magazine
   m_TagString: Untagged
@@ -175,7 +175,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2377185723757957356
+--- !u!114 &6740186437763828259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4767983294330989089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1005a4ba60ae67648888ffb8cbef3194, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f485117a53a2c5488d5e4ba4dc10d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -250,7 +250,8 @@ MonoBehaviour:
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
   SelectRecognitionTime: 0.1
---- !u!114 &134876622288355805
+  isNotGrabbableOnStart: 0
+--- !u!114 &8189596284132819176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
