@@ -215,14 +215,14 @@ public class DialInteractable : XRBaseInteractable
             angle = step * m_StepSize;
             
             if (angle != m_CurrentAngle)
-            {
+            {/*
                 SFXPlayer.Instance.PlaySFX(SnapAudioClip, transform.position, new SFXPlayer.PlayParameters()
                 {
                     Pitch = UnityEngine.Random.Range(0.9f, 1.1f),
                     SourceID = -1,
                     Volume = 1.0f
                 }, 0.0f);
-                
+                */
                 OnDialStepChanged.Invoke(step);
                 OnDialChanged.Invoke(this);
                 m_CurrentStep = step;
