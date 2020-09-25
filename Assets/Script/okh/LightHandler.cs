@@ -23,4 +23,11 @@ public class LightHandler : MonoBehaviour
             light.enabled = true;
         }
     }
+    public void TurnOff()
+    {
+        foreach (Light light in lights)
+        {
+            light.enabled = false;
+        }
+    }
 }
