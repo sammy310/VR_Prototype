@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class SideDoor : MonoBehaviour
 {
 
     public Transform target;

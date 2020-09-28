@@ -12,7 +12,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class XRReleaseController : XRController
 {
     bool m_Selected;
-
+    
     FieldInfo m_SelectionStateFieldInfo;
     
     FieldInfo m_SelectionStateActivatedThisFrameInfo;
