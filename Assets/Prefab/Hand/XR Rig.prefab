@@ -567,7 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526571659549516911}
   - component: {fileID: 501809456693203601}
-  - component: {fileID: 2712973386093634028}
+  - component: {fileID: 7843441778545822263}
   - component: {fileID: 233360458512957237}
   - component: {fileID: 6065966778808849293}
   m_Layer: 0
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
---- !u!114 &2712973386093634028
+--- !u!114 &7843441778545822263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,13 +626,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 243973097849659844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Script: {fileID: 11500000, guid: f61cd12014a0d3840bd592b4947d49fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
   m_AttachTransform: {fileID: 7871233138258630139}
   m_StartingSelectedInteractable: {fileID: 0}
   m_OnHoverEnter:
@@ -684,11 +684,14 @@ MonoBehaviour:
   m_SphereCastRadius: 0
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
   m_RaycastTriggerInteraction: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
+  teleportBlockMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!120 &233360458512957237
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1071,7 +1074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1837324663698435755}
   - component: {fileID: 2244328514690306571}
-  - component: {fileID: 3487965464052155653}
+  - component: {fileID: 298439236223279318}
   - component: {fileID: 1565637759580879298}
   - component: {fileID: 2451576786765132789}
   m_Layer: 0
@@ -1121,7 +1124,7 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
---- !u!114 &3487965464052155653
+--- !u!114 &298439236223279318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1130,13 +1133,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1837324663698435752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Script: {fileID: 11500000, guid: f61cd12014a0d3840bd592b4947d49fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
   m_AttachTransform: {fileID: 1482851049257466770}
   m_StartingSelectedInteractable: {fileID: 0}
   m_OnHoverEnter:
@@ -1188,11 +1191,14 @@ MonoBehaviour:
   m_SphereCastRadius: 0
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
   m_RaycastTriggerInteraction: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
+  teleportBlockMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!120 &1565637759580879298
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1811,8 +1817,8 @@ MonoBehaviour:
   DisableSetupForDebug: 0
   StartingPosition: {fileID: 0}
   TeleporterParent: {fileID: 0}
-  RightTeleportInteractor: {fileID: 3487965464052155653}
-  LeftTeleportInteractor: {fileID: 2712973386093634028}
+  RightTeleportInteractor: {fileID: 298439236223279318}
+  LeftTeleportInteractor: {fileID: 7843441778545822263}
   RightDirectInteractor: {fileID: 1837324663945620828}
   LeftDirectInteractor: {fileID: 1837324665045843313}
   RightTractorBeam: {fileID: 1358349930}
